@@ -6,18 +6,4 @@
 * библиотека - Leaflet
 ### Цели проекта:
 Создание интерактивных карт для ФГБУ "ИНСТИТУТ ГЛОБАЛЬНОГО КЛИМАТА И ЭКОЛОГИИ ИМЕНИ АКАДЕМИКА Ю. А. ИЗРАЭЛЯ". 
-
-
-### Screenshots:
-
-
-![Alt text](/screenshots/1.png)
-
-
-![Alt text](/screenshots/2.png)
-
-
-![Alt text](/screenshots/3.png)
-
-
-![Alt text](/screenshots/4.png)
+### Ссылка на GitHub Pages: <https://petrudin.github.io/Map_of_contaminated/>
