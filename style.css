@@ -124,3 +124,20 @@ body {
     margin: 0 0 5px;
     color: #777;
 }
+.leaflet-control-layers-toggle:after {
+    position: absolute;
+    right: 0;
+    top:10px;
+    content: "Веберите год:";
+    color: #000;
+    font-size: 12px;
+}
+
+.leaflet-control-layers-toggle {
+    position: relative;
+    background-image: none !important;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2) !important;
+    width: 75px !important;
+}
