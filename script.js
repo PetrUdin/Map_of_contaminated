@@ -6,7 +6,7 @@ window.onload = function() {
     }, 500);
 };
 
-var mbAttr = `ФГБУ «Институт глобального климата и экологии имени академика Ю.А. Израэля»` + `<br>` + '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors';
+var mbAttr = `ФГБУ «Институт глобального климата и экологии имени академика Ю.А. Израэля»` + `<br>` + '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a>';
 var mbUrl = 'http://{s}.tile.osm.org/{z}/{x}/{y}.png';
 var baseMap = L.tileLayer(mbUrl, { attribution: mbAttr });
 
@@ -282,16 +282,16 @@ function getColor(d) {
         '#FFEDA0';
 }
 
-var legend = L.control({ position: 'bottomright' });
+var legend = L.control({ position: 'bottomleft' });
 
 legend.onAdd = function(map) {
 
     var div = L.DomUtil.create('div', 'info legend'),
-        grades = [1, 2, 3, 4, 5],
-        labels = [];
+        grades = [1, 2, 3, 4, 5];
+        div.innerHTML = '<h4>Уровень' + '<br>' + 'загрязнений:</h4>'
     for (var i = 0; i < grades.length; i++) {
         div.innerHTML +=
-            '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' + 'Уровень загрязнений - ' +
+            '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' + '  -  ' +
             grades[i] + '<br>' + '<br>';
     }
 
