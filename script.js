@@ -85,7 +85,7 @@ var map = L.map('map', {
 });
 
 
-L.control.layers(baseMaps, {}).addTo(map);
+L.control.layers(baseMaps, {},{collapsed: false}).addTo(map);
 
 
 
